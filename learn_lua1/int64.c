@@ -1,15 +1,3 @@
-//Learn Git and GitHub without any code!
-//Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-//
-//
-//2
-//05benpop/lua-int64
-// Code Issues 0 Pull requests 0 Actions Projects 0 Wiki Security Insights
-//lua-int64/int64.c
-// benpop remove debug function
-//a55f0e1 on 29 Jul 2013
-//906 lines (729 sloc)  19.4 KB
-  
 #include <ctype.h>
 #include <math.h>
 #include <stddef.h>
@@ -912,7 +900,7 @@ LUALIB_API int luaopen_int64 (lua_State *L) {
   luaL_register(L, "int64", lib);
   lua_pushvalue(L, -1);
   lua_setmetatable(L, -2);
-    return 1;
+  return 1;
 }
 
 
